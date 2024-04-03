@@ -1,0 +1,251 @@
+/*-------
+PC Gama Media Baja 1280 x 800px
+PC Gama Alta Media 1440 x 900px
+-------*/
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+.f_400{font-size: 20rem; line-height: 18rem;}
+.f_250 {font-size: 11rem; line-height: 10rem;}
+.f_150{font-size: 8rem; line-height: 7rem;}
+.copyright{width: 100%; bottom: .5rem;}
+.copyright .column_20{width: 50%;}
+footer .f2 { font-size: 1.6rem;}
+footer .f3 {font-size: 1.4rem;}
+
+}
+
+
+/*------- 
+|||||||| Smarthphone 641px x 1024px - Smarthphone 800px x 1280px ||||||||
+------- */
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+
+.navegation{margin-top: 1rem;}
+.navbar_bottom{min-width: 460px;}
+.switch_contender{width: 1.8rem; height: 1rem; padding: .15rem; margin-top: .1rem;}
+.switch_l, .switch_r{width: 1rem; height: 1rem;}
+
+/*-------Index-------*/
+.cover::before{background-size: 800px 900px;}
+.min_h100{min-height: auto;}
+.modelado .cohete{height: 650px; top: 1rem; left: -5%;}
+.modelado .avatar{height: 850px; top: 7rem; left: 0%;}
+
+.profile .me,  .me img{height: 500px;}
+.skills ul li{font-size: 1.6rem; line-height: 1.4rem;}
+
+.projects_item .title .f_75 {line-height: 2.8rem;}
+
+/*-------Fonts-------*/
+.f_400{font-size: 12rem; line-height: 12rem;}
+.f_300{font-size: 10rem; line-height: 10.5rem;}
+.f_250{font-size: 8.5rem; line-height: 8rem;}
+.f_200{font-size: 7rem; line-height: 7.3rem;}
+.f_150{font-size: 5.7rem; line-height: 5rem;}
+.f_100{font-size: 4.4rem; line-height: 4rem;}
+.f_75{font-size: 3.5rem; line-height: 3rem;}
+.blog_item .f_75 {font-size: 2rem; line-height: 2rem;}
+.f1 {font-size: 2rem; line-height: 2rem; letter-spacing: .024rem; }
+.f2 {font-size: 1.8rem; letter-spacing: .03rem; word-spacing: -.2rem;}
+.f3 {font-size: 1.4rem; letter-spacing: .02rem;}
+.f4 {font-size: 1.13rem; letter-spacing: .024rem;}
+.body_box_item .f4{font-size: 1.57rem;}
+.f5 {font-size: .98rem; letter-spacing: .02rem;}
+.f6 {font-size: .8rem; letter-spacing: .018rem;}
+.phrase_one, .phrase_two{width: 100%;}
+.btn_title{font-size: 1.2rem;}
+.list_item{margin-left: 0rem;}
+
+.column_100 {width: 100%;}
+.column_90 {width: 100%;}
+.column_80 {width: 100%;}
+.column_70 {width: 100%;}
+.column_60 {width: 100%;}
+.column_50 {width: 100%;}
+.column_40 {width: 50%;}
+.column_30 {width: 50%;}
+footer .column_30 {width: 100%;}
+.column_25 {width: 50%;}
+.body_item .column_25{width: 42%;}
+.column_20 {width: 50%;}
+
+.about .column_40{width: 80%;}
+.about .column_20{width: 20%;}
+/*-------Blog-------*/
+.b_item_picture{width: 40%;}
+.b_item_picture img{height: 300px;}
+.b_item_desc{width: 60%;}
+footer .f_250{line-height: 3rem;}
+.copyright{display: inline-block; bottom: 1rem; position: relative;}
+.network_s span{font-size: 1.1rem;}
+
+}
+
+/*-------
+Smarthphone 641px x 1024px
+Tablet 768px x 1024px
+-------*/
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+
+.navbar_right ul{gap: 2rem;}
+.navbar_right ul li span{font-size: 1.45rem; line-height: 1.4rem;}
+.navbar_right ul li span .icon{font-size: 1.2rem;}
+.navbar_bottom ul li a{font-size: 1.4rem;}
+
+/*-------Projects-------*/
+.projects_item{margin-top: 1.5rem; padding-bottom: .5rem;}
+.projects_item .title .f_75 {line-height: 2.2rem; font-size: 2.5rem;}
+.projects_item .picture{margin: .9rem;}
+
+}
+
+/*-------
+Smarthphone 481px x 768px
+Smarthphone 640px x 1024px
+-------*/
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+
+.navbar_bottom{min-width: 400px;}
+.navbar_right ul{gap: 2rem;}
+.navbar_right ul li span{font-size: 1.2rem; line-height: 1.3rem;}
+.navbar_right ul li span .icon{font-size: 1rem;}
+.navbar_bottom ul li a{font-size: 1.4rem;}
+
+/*-------Index-------*/
+.cover::before{background-size: 700px 800px;}
+.modelado .cohete{height: 550px; left: -10%;}
+.modelado .avatar{height: 750px; top: 1rem; left: 0%;}
+.profile .me,  .me img{height: 300px;}
+.skills ul{display: flex; flex-wrap: wrap; gap: 1rem;}
+.skills ul li{font-size: 1.9rem; line-height: 1.5rem;}
+
+/*-------Projects-------*/
+.projects_item{margin-top: 1.5rem; padding-bottom: .5rem;}
+.projects_item .title .f_75 {line-height: 1.8rem; font-size: 2rem;}
+.projects_item .picture{margin: .9rem;}
+
+}
+
+/*------- 
+|||||||| Smarthphone 360px x 768px - Smarthphone 640px x 1024px ||||||||
+------- */
+@media only screen and (min-width: 240px) and (max-width: 640px) {
+
+.column_100 {width: 100%;}
+.column_90 {width: 100%;}
+.column_80 {width: 100%;}
+.column_70 {width: 100%;}
+.column_60 {width: 100%;}
+.column_50 {width: 100%;}
+.column_40 {width: 100%;}
+.column_30 {width: 100%;}
+.column_25 {width: 100%;}
+.column_20 {width: 100%;}
+
+.min_h100{min-height: auto;}
+
+.logo{display: none;}
+.navegation{margin-top: .5rem;}
+.switch_contender{width: 1.563rem; height: .85rem; padding: .15rem; margin-top: .1rem;}
+.switch_l, .switch_r{width: .813rem; height: .813rem;}
+.container{width: 94%;}
+/*-------Fonts-------*/
+.f_400{font-size: 7rem; line-height: 7rem;}
+.f_300{font-size: 8.5rem; line-height: 8.5rem;}
+.f_250{font-size: 6rem; line-height: 6rem;}
+.f_200{font-size: 5rem; line-height: 7rem;}
+.f_150{font-size: 4rem; line-height: 3rem;}
+.f_100{font-size: 3.2rem; line-height: 5rem;}
+.f_75{font-size: 2.5rem; line-height: 3rem;}
+.blog_item .f_75 {font-size: 2rem; line-height: 2rem;}
+.f1 {font-size: 2rem; line-height: 2rem; letter-spacing: .024rem; }
+.f2 {font-size: 1.8rem; letter-spacing: .03rem; word-spacing: -.2rem;}
+.f3 {font-size: 1.4rem; letter-spacing: .02rem;}
+.f4 {font-size: 1.13rem; letter-spacing: .024rem;}
+.body_box_item .f4{font-size: 1.57rem;}
+.f5 {font-size: .98rem; letter-spacing: .02rem;}
+.f6 {font-size: .8rem; letter-spacing: .018rem;}
+.phrase_one, .phrase_two{width: 100%;}
+.btn_title{font-size: 1.2rem;}
+.list_item{margin-left: 0rem;}
+
+footer .f_250{line-height: 3rem;}
+.copyright{display: inline-block; bottom: 1rem; position: relative;}
+.email{padding-bottom: 2rem;}
+.network_s span{font-size: 1.1rem;}
+.network_s .rs{font-size: 1rem;}
+}
+
+/*-------
+Smarthphone 360px x 768px
+Smarthphone 480px x 1024px
+-------*/
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+.navbar_right ul{gap: 1rem;}
+.navbar_right ul li span{font-size: .98rem; line-height: .9rem;}
+.navbar_right ul li span .icon{font-size: .8rem;}
+.navbar_bottom{min-width: 320px; transform: translate(-50%, -5%);}
+.navbar_bottom ul li{padding: .08rem;}
+.navbar_bottom ul li a{font-size: 1.3rem;}
+
+/*-------Projects-------*/
+.projects_item{margin-right: 0rem; padding-bottom: 1rem;}
+.projects_item .title, .projects_item .desc{padding-top: 1.2rem;}
+.projects_item img{ height: 400px;}
+.projects_item .picture{margin: 0rem;}
+.projects_item .title h1{line-height: 2rem;}
+
+/*-------Index-------*/
+.cover::before{background-size: 600px 700px;}
+.min_h200{min-height: 110vh;}
+.modelado .cohete{height: 450px; top: 0rem; left: -12%;}
+.modelado .avatar{height: 600px; top: 2rem; left: 0%;}
+.profile .me,  .me img{height: 300px;}
+.skills ul{display: flex; flex-wrap: wrap; gap: 1rem;}
+.skills ul li{font-size: 1.9rem; line-height: 1.5rem;}
+
+/*-------Blog-------*/
+.blog_item{display: grid;}
+.box_item{height: 250px;}
+.b_item_picture, .b_item_desc{width: inherit;}
+.b_item_picture img{height: 300px;}
+.b_item_desc{margin: 1rem;}
+
+}
+
+/*-------
+Smarthphone 240px x 540px
+Smarthphone 320px x 640px
+-------*/
+@media only screen and (min-width: 240px) and (max-width: 359px) {
+
+.f_400{font-size: 5rem; line-height: 5rem;} 
+.f_150{font-size: 2rem; line-height: 2rem;} 
+.f1 {font-size: 1.56rem; line-height: 1.5rem;}
+.f2 {font-size: 1.56rem; line-height: 1.7rem; letter-spacing: .01rem;}
+footer .f_250 { font-size: 4rem; line-height: 2rem;}
+.network_s .f2 {font-size: 1.3rem;}
+.network_s .f3 {font-size: 1.1rem;}
+.box_item{height: 260px;}
+.body_box_item .f4{font-size: 1.4rem;}
+.blog_item{display: grid;}
+.b_item_picture img{height: 200px;}
+.b_item_picture, .b_item_desc {width: inherit;}
+
+/*-------Index-------*/
+.cover::before{background-size: 600px 700px;}
+.modelado .cohete{height: 400px; top: 0rem; left: -12%;}
+.modelado .avatar{height: 540px; top: 2rem; left: 0%;}
+.profile .me,  .me img{height: 240px;}
+.skills ul{display: flex; flex-wrap: wrap; gap: .8rem;}
+.skills ul li{font-size: 1.5rem; line-height: 1.2rem;}
+
+
+.navbar_right ul{gap: 1rem;}
+.navbar_right ul li span{font-size: .9rem; line-height: .9rem;}
+.navbar_right ul li span .icon{font-size: .8rem;}
+.navbar_bottom{min-width: 240px; transform: translate(-50%, -5%);}
+.navbar_bottom ul li{padding: .05rem;}
+.navbar_bottom ul li a{font-size: 1.1rem;}  
+
+}
