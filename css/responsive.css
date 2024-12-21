@@ -122,7 +122,17 @@
     .cover .avatar{max-width: 100%!important;}
   }
   @media (max-width: 400px) {
-    .cover .avatar{top: 12rem;}
+    .cover, .main {min-height: inherit!important;}
+    .cover .avatar{top: 12rem; position: inherit!important;}
     .player_music_contender{display: none;}
-    .navbar_bottom{transform: translate(-20%, -50%)!important;}
+
+    .f_250 {font-size: calc(9px* 6); line-height: calc(9px* 6);}
+    h2, h4 {
+        font-size: calc(4.2px* 6);
+        line-height: calc(4.2px* 6);
+    }
+    .navbar_right ul li:first-child{
+        display: none;
+    }
+    .cover .scroll{display: none;}
   }
