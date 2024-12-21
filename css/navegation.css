@@ -1,0 +1,91 @@
+header{
+    position: relative;
+    z-index: 2;
+}
+.navegation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.navbar_left,
+.navbar_center,
+.navbar_right {
+    display: flex;
+}
+.navbar_right ul {
+    display: flex;
+    gap: 5rem;
+}
+.navbar_right ul li {
+    display: grid;
+    align-items: center;
+}
+.navbar_right ul li span {
+    font-size: 1.68rem;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: .03rem;
+}
+.navbar_right ul li span .icon {
+    color: var(--color_dark);
+    font-size: 1.3rem;
+    margin-right: .15rem;
+}
+.switch_contender {
+    border: .186rem solid var(--color_dark);
+    border-radius: 2rem;
+    width: 3.125rem;
+    height: 1.7rem;
+    padding: 0.2rem;
+    display: flex;
+    margin-top: 1rem;
+    cursor: pointer;
+    gap: .125rem;
+}
+.switch_l,
+.switch_r {
+    background: var(--color_dark);
+    border-radius: 50%;
+    width: 1.625rem;
+    height: 1.625rem;
+}
+.switch_r {
+    margin-left: 1.2rem;
+}
+.status {
+    animation-name: toogleStatus;
+    animation-duration: .75s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: inline-grid;
+    margin-right: .25rem;
+}
+@keyframes toogleStatus {
+    0% {opacity: 0;  zoom: .85;}
+    100% {opacity: 1; zoom: 1;}
+}
+
+.navbar_bottom {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.navbar_bottom ul {
+    display: flex;
+    background: var(--color_nav);
+    backdrop-filter: blur(.4rem);
+    border-radius: 1.5rem;
+    padding: .5rem;
+}
+.navbar_bottom ul li {
+    padding: .4rem;
+}
+.navbar_bottom ul li a {
+    padding: .1rem;
+    color: var(--color_dark);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

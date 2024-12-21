@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevЭlkin — Portfolio</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="light_mode" id="body">
+    <main class="cover overflow_h">
+        <header>
+            <div class="container container_max">
+                <nav class="navegation">
+                    <div class="navbar_left">
+                        <div class="switch_contender" id="switch">
+                            <div class="switch_l" id="light_mode"></div>
+                            <div class="hidden switch_r" id="dark_mode"></div>
+                        </div>
+                    </div>
+                    <div class="navbar_right">
+                        <ul>
+                            <li><span><i class="ai-planet icon"></i> Creative Portfolio <br>V.0.1</span></li>
+                            <li><span><i class="ai-globe icon"></i> Current Status <br><span class="color_verify">
+                                <i class="status ai-circle-fill fs2 m_r025"></i>Available</span></span></li>
+                            <li><span>Hello@DevCorey.io <br>+1 (518)282-6211</span></li>
+                        </ul>
+                    </div>
+                    <div class="navbar_bottom">
+                        <ul>
+                            <li><a href="./"> Info</a></li>
+                            <li><a href="./"> Projects</a></li>
+                            <li><a href="./"> Notes</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="scroll">
+            <div class="scroll_c">
+                <img class="filter" src="img/scroll.png">
+                <small>Scroll down</small>
+            </div>
+        </div>
+        <div class="slogan posit_r d_f column_w100">
+            <h1 class="f_350">DEVELOPER. DESIGNER. ENGINEER.</h1>
+            <h1 class="f_350">DEVELOPER. DESIGNER. ENGINEER</h1>
+        </div>
+        <img class="avatar" src="img/robot.png">
+    </main>
+    <main class="cover overflow_h">
+        <div class="container container_min">
+            <h1 class="f_250" align="center">GET TO KNOW ME</h1>
+            <aside class="column j_cc">
+                <div class="column_w20">
+                    <h4 class="item">1. BIO</h4>
+                </div>
+                <div class="column_w70">
+                    <article class="item">
+                        <h2>My name is Elkin Jenner. I do fullstack development but I love UI/UX Design and the 3D world. I am a JavaScript and TypeScript advocate and a lover of CSS. I have recently taken a liking to Machine Learning and I am trying to delve into the world of AI and Robotics. I believe as engineers we can create things that could potentially change the world for the better.</h2>
+                    </article>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <!--Player music-->
+    <article class="player_music_contender">
+        <div class="player_music">
+                <date_add class="cover_music">
+                    <div class="hidden sound_waves" id="sound_waves">
+                        <div class="sound_wave small"></div>
+                        <div class="sound_wave medium"></div>
+                        <div class="sound_wave large"></div>
+                    </div>
+                    <picture id="album"></picture>
+                </date_add>
+
+                <div class="d_g">
+                    <date_add class="theme" id="song">
+                </date_add>
+                
+                <date_add class="action">
+                    <img class="icon_p filter" src="img/back_icon.png" id="back_m">
+                    <div id="action_music">
+                        <i class="play icon bx bx-play" id="play"></i>
+                        <i class="hidden bx bx-pause" id="pause"></i>
+                    </div>
+                    <img class="icon_p filter" src="img/next_icon.png" id="next_m">
+                </date_add>
+
+                </div>
+        
+                <date_add class="volume_control">
+                    <i class="icon ai-sound-on"></i>
+                    <div class="volume_range">
+                        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.6">
+                    </div>
+                </date_add>
+            </div>
+        </article>
+        <script src="js/main.js"></script>
+        <script src="js/play.js"></script>
+</body>
+</html>

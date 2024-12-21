@@ -1,0 +1,25 @@
+.light_mode {
+  --color_dark: #111111;
+  --color_light: #eeedf4;
+  --color_white: #FFFFFF;
+  --color_black: #000000;
+  --color_nav: rgba(255, 255, 255, .7);
+}
+.dark_mode {
+  --color_dark: #fffcf4;
+  --color_light: #111111;
+  --color_white: #000000;
+  --color_black: #FFFFFF;
+  --color_nav: rgba(0, 0, 0, .85);
+  --filter: invert(1);
+}
+:root {
+  --color_primary: #FF7A55;
+  --color_secondary: #F0F7EE;
+  --color_third: #87BBA2;
+  --color_fourth: #5D737E;
+  --color_verify: #0eae21;
+  --color_danger: #f9371c;
+}
+.filter{filter: var(--filter);}
+.color_verify{color: var(--color_verify);}

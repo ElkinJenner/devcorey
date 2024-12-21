@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'BaseNeue CondensedMedium';
+  src: url('../fonts/BaseNeue-CondensedMedium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4{
+  font-family: 'BaseNeue CondensedMedium', sans-serif;
+  color: var(--color_dark);
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.f_350 {
+  font-size: calc(58.3333333333px * 6);
+  line-height: calc(58.3333333333px * 6);
+}
+.f_250 {
+  font-size: calc(41.6666666667px * 6);
+  line-height: calc(41.6666666667px * 6);
+}
+h1 {
+  font-size: calc(8px * 6);
+  line-height: calc(8px * 6);
+}
+h2 {
+  font-size: calc(6px * 6);
+  line-height: calc(6px * 6);
+}
+h3 {
+  font-size: calc(5px * 6);
+  line-height: calc(5px * 6);
+}
+h4 {
+  font-size: calc(4.5px * 6);
+  line-height: calc(4.5px * 6);
+}
+.fs2 {font-size: .875rem;}
+body {
+  font: 22px 'BaseNeue CondensedMedium', sans-serif;
+  background: var(--color_light);
+  color: var(--color_dark);
+  letter-spacing: 1px;
+}

@@ -1,0 +1,123 @@
+ @media (max-width: 1440px) {
+    .f_350 {
+        font-size: calc(50px * 6);
+        line-height: calc(50px * 6);
+    }
+    .f_250 {
+        font-size: calc(33.3333333333px * 6);
+        line-height: calc(33.3333333333px * 6);
+    }
+ }
+ @media (max-width: 1200px) {
+     .column_w25,
+     .column_w20,
+     .column_w16 {
+         width: 33.3333%!important;
+     }
+    .f_350 {
+        font-size: calc(41.6666666667px * 6);
+        line-height: calc(41.6666666667px * 6);
+    }
+
+    .f_250 {
+        font-size: calc(25px * 6);
+        line-height: calc(25px * 6);
+    }
+ }
+ @media (max-width: 840px) {
+     .column_w33,
+     .column_w25,
+     .column_w20,
+     .column_w16 {
+         width: 50%!important;
+     }
+    .cover .avatar{max-width: 60%!important;}
+       .switch_contender{
+        width: 1.875rem;
+        height: 1.02rem;
+    }
+    .switch_contender {
+    width: 2.4375rem;
+    height: 1.326rem;
+    }
+    .switch_l, .switch_r {
+        width: 1.2675rem;
+        height: 1.2675rem;
+    }
+    .navbar_right ul {
+        gap: 1.95rem;
+    }
+    span {
+        font-size: 26px !important;
+    }
+    .scroll_c{display: flex!important; gap: .5rem;}
+
+ }
+
+ @media (max-width: 720px) {
+    .container_min{max-width: 100%!important;}
+    .column_w70,
+     .column_w50,
+     .column_w33,
+     .column_w25,
+     .column_w20,
+     .column_w16 {
+         width: 100%!important;
+     }
+     .f_350{
+        font-size: calc(25px * 6);
+        line-height: calc(25px * 6);
+     }
+     .f_250{
+        font-size: calc(12px * 6);
+        line-height: calc(12px * 6);
+     }
+    h2, h4{
+    font-size: calc(5px* 6);
+    line-height: calc(5px* 6);
+    }
+    .navegation{margin-top: .1rem; align-items: baseline;}
+    .navbar_bottom{bottom: -1rem!important;}
+    .navbar_bottom ul li{padding: .2rem!important;}
+    .navbar_bottom ul li a{font-size: 1.25rem!important;}
+    .switch_contender{
+        width: 1.875rem;
+        height: 1.02rem;
+    }
+    .switch_l, .switch_r{
+        width: 0.975rem;
+        height: 0.975rem;
+    }
+    .switch_r {margin-left: 1rem;}
+    .navbar_right ul {gap: 1.5rem;}
+    span{font-size: 20px!important;}
+    .cover .avatar{max-width: 80%!important;}
+    .player_music_contender{margin-right: .5rem!important;}
+    .player_music{display: inherit!important;}
+    .player_music .img60{width: 80px;}
+    .player_music .theme .song{max-width: 80px!important;}
+    .player_music .theme .song.player_music .theme,.player_music .theme{
+        min-width: 80px!important;
+    }
+    .player_music .theme .artist{
+        max-width: 80px!important;
+        overflow: hidden;
+    }
+    .player_music .theme .artist small{
+        white-space: nowrap;
+        animation: moveSong 12s linear infinite;
+    }
+    .volume_range{
+        top: initial !important;
+        right: 1rem!important;
+        opacity: 1!important;
+    }
+    .volume_control input[type="range"]{
+        transform: none!important;
+    }
+
+ }
+  @media (max-width: 600px) {
+    span{font-size: 16px!important; line-height: 19px!important;}
+    .cover .avatar{max-width: 100%!important;}
+  }
