@@ -121,3 +121,8 @@
     span{font-size: 16px!important; line-height: 19px!important;}
     .cover .avatar{max-width: 100%!important;}
   }
+  @media (max-width: 400px) {
+    .cover .avatar{top: 12rem;}
+    .player_music_contender{display: none;}
+    .navbar_bottom{transform: translate(-20%, -50%)!important;}
+  }
