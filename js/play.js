@@ -12,7 +12,7 @@ class Cancion {
 let musicList = [
     new Cancion("Black Honey", "music/BlackHoney.mp3", "THRICE", "music/BlackHoney.jpg"), 
     new Cancion("Snap Out Of It", "music/SnapOutOfIt.m4a", "ARCTIC MONKEYS", "music/SnapOutOfIt.jpg"),
-    new Cancion("LOST", "music/Lost.mp3", "FAESFIRE", "music/lost.jpg"),
+    new Cancion("LOST", "music/Lost.mp3", "FAESFIRE", "music/Lost.jpg"),
     new Cancion("Pap Smear", "music/PapSmear.mp3", "CRYSTAL CASTLE", "music/PapSmear.jpg"), 
     new Cancion("Dead And Gone", "music/DeadAndGone.mp3", "CRAZY WOLF", "music/DeadAndGone.jpg"),
     new Cancion("Carry Me Away", "music/CarryMeAway.m4a", "ANNISOKAY", "music/CarryMeAway.jpg"),
