@@ -40,6 +40,32 @@ function handleKey(event) {
     }
 }
 
+
+// Seleccionar el elemento del menú
+const navbarBottom = document.querySelector(".navbar_bottom");
+
+// Variable para rastrear la última posición del scroll
+let lastScrollY = window.scrollY;
+
+// Función para mostrar u ocultar el menú dependiendo de la dirección del scroll
+function handleNavbarVisibility() {
+    const currentScrollY = window.scrollY;
+
+    // Mostrar el menú si se está desplazando hacia arriba
+    if (currentScrollY < lastScrollY) {
+        navbarBottom.style.transform = "translate(-50%, -30px)"; // Aparece
+    }
+    // Ocultar el menú si se está desplazando hacia abajo
+    else {
+        navbarBottom.style.transform = "translate(-50%, 100%)"; // Desaparece
+    }
+
+    // Actualizar la posición del scroll
+    lastScrollY = currentScrollY;
+}
+
+// Escuchar el evento de scroll en la ventana
+window.addEventListener("scroll", handleNavbarVisibility);
 // Agregar los eventos de scroll y teclado
 window.addEventListener("wheel", handleScroll, { passive: false });
 window.addEventListener("keydown", handleKey);
