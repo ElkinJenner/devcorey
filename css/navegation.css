@@ -72,6 +72,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    transition: transform 0.3s ease-in-out;
 }
 .navbar_bottom ul {
     display: flex;
@@ -88,4 +89,8 @@ header{
     color: var(--color_dark);
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+#info {
+    scroll-margin-top: 80px;
+    /* Ajusta según la altura del menú */
 }
