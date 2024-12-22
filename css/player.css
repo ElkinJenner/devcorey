@@ -19,8 +19,9 @@
     position: relative;
 }
 .player_music .action{
-    align-items: center;
     display: inline-flex;
+    gap: .4rem;
+    align-items: baseline;
 }
 .player_music .volume_control{
     display: flex;

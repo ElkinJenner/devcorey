@@ -23,20 +23,20 @@ h4{
   line-height: calc(41.6666666667px * 6);
 }
 h1 {
-  font-size: calc(8px * 6);
+  font-size: calc(7px * 6);
   line-height: calc(8px * 6);
 }
 h2 {
-  font-size: calc(6px * 6);
-  line-height: calc(6px * 6);
+  font-size: calc(5.5px * 6);
+  line-height: calc(6.2px * 6);
 }
 h3 {
   font-size: calc(5px * 6);
-  line-height: calc(5px * 6);
+  line-height: calc(5.4px * 6);
 }
 h4 {
   font-size: calc(4.5px * 6);
-  line-height: calc(4.5px * 6);
+  line-height: calc(5px * 6);
 }
 .fs2 {font-size: .875rem;}
 body {
@@ -44,4 +44,6 @@ body {
   background: var(--color_light);
   color: var(--color_dark);
   letter-spacing: 1px;
+  scroll-behavior: smooth;
+  overflow: hidden;
 }

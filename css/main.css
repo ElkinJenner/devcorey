@@ -2,8 +2,7 @@
 @import "colors.css";
 @import "navegation.css";
 @import "responsive.css";
-@import "akar-icons.css";
-@import "boxicons.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/akar-icons-fonts/1.1.9/css/akar-icons.css";
 @import "player.css";
 *,
 ::after,
@@ -62,6 +61,22 @@ a{
 .item {
   margin: 0.5rem;
   padding: 0.5rem 1rem;
+}
+.item_n{
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+}
+.circle_i{
+  border: 2px solid var(--color_dark);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
 }
 .hidden {display: none;}
 .overflow_h{overflow: hidden;}

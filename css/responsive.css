@@ -1,4 +1,5 @@
  @media (max-width: 1440px) {
+    .container_min{max-width: inherit!important;}
     .f_350 {
         font-size: calc(50px * 6);
         line-height: calc(50px * 6);
