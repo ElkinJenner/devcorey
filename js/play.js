@@ -10,14 +10,19 @@ class Cancion {
 }
 // Lista de canciones
 let musicList = [
-    new Cancion("Black Honey", "music/BlackHoney.mp3", "THRICE", "music/BlackHoney.jpg"), 
+    new Cancion("Trouble", "music/Trouble.mp3", "CAGE THE ELEPHANT", "music/Trouble.jpg"),
+    new Cancion("The Suburbs", "music/TheSuburbs.mp3", "ARCADE FIRE", "music/TheSuburbs.jpg"),
+    new Cancion("Black Honey", "music/BlackHoney.mp3", "THRICE", "music/BlackHoney.jpg"),
     new Cancion("Snap Out Of It", "music/SnapOutOfIt.m4a", "ARCTIC MONKEYS", "music/SnapOutOfIt.jpg"),
+    new Cancion("Lost In A Wave", "music/LostInAWave.mp3", "LANDMVRKS", "music/LostInAWave.jpg"),
+    new Cancion("UNFAMILIAR", "music/Unfamiliar.m4a", "POLARIS", "music/Unfamiliar.jpg"),
+    new Cancion("Pap Smear", "music/PapSmear.mp3", "CRYSTAL CASTLE", "music/PapSmear.jpg"),
     new Cancion("LOST", "music/Lost.mp3", "FAESFIRE", "music/Lost.jpg"),
-    new Cancion("Pap Smear", "music/PapSmear.mp3", "CRYSTAL CASTLE", "music/PapSmear.jpg"), 
+    new Cancion("This Picture", "music/ThisPicture.mp3", "PLACEBO", "music/ThisPicture.jpg"),
+    new Cancion("Where Is My Mind? ", "music/WhereIsMyMind.mp3", "PIXIES", "music/WhereIsMyMind.jpg"),
     new Cancion("Dead And Gone", "music/DeadAndGone.mp3", "CRAZY WOLF", "music/DeadAndGone.jpg"),
     new Cancion("Carry Me Away", "music/CarryMeAway.m4a", "ANNISOKAY", "music/CarryMeAway.jpg"),
     new Cancion("Why Did You?", "music/WhyDidYou.mp3", "FAESFIRE", "music/WhyDidYou.jpg"),
-
     // Agrega más canciones según sea necesario
 ];
 
@@ -45,98 +50,109 @@ let back_m = document.getElementById("back_m");
 let next_m = document.getElementById("next_m");
 let volumeControl = document.getElementById("volume");
 
-// Función para generar un índice aleatorio diferente al actual
-function getRandomIndex(currentIndex, arrayLength) {
-    let randomIndex = currentIndex;
-    while (randomIndex === currentIndex) {
-        randomIndex = Math.floor(Math.random() * arrayLength);
+// Crear un conjunto para almacenar los índices reproducidos
+let playedIndexes = new Set();
+
+// Función para generar un índice aleatorio sin repetir
+function getNextRandomIndex() {
+    // Si todas las canciones ya se han reproducido, reiniciar el conjunto
+    if (playedIndexes.size === musicList.length) {
+        playedIndexes.clear();
     }
+
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * musicList.length);
+    } while (playedIndexes.has(randomIndex));
+
+    // Agregar el índice generado al conjunto
+    playedIndexes.add(randomIndex);
+
     return randomIndex;
 }
 
-
-action_music.addEventListener('click', function(){
-    if (status_p == false){
+action_music.addEventListener('click', function () {
+    if (status_p == false) {
         music.play();
         play.classList.add("hidden");
         pause.classList.remove("hidden");
         sound_waves.classList.remove("hidden");
         status_p = true;
-            // Evento de clic para cambiar y reproducir la siguiente pista desde el botón "next"
-            next_m.addEventListener('click', function () {
-                // Incrementar el índice para la siguiente canción
-                musicIndex = (musicIndex + 1) % musicList.length;
-                // Obtener la nueva canción
-                cancionActual = musicList[musicIndex];
-                // Cambiar la dirección de la nueva canción
-                music.src = cancionActual.dir;
-                
-                // Acceder a todos los atributos de la nueva canción
-                nombre = cancionActual.nombre;
-                artista = cancionActual.artista;
-                url = cancionActual.url;
+        // Evento de clic para cambiar y reproducir la siguiente pista desde el botón "next"
+        next_m.addEventListener('click', function () {
+            // Incrementar el índice para la siguiente canción
+            musicIndex = (musicIndex + 1) % musicList.length;
+            // Obtener la nueva canción
+            cancionActual = musicList[musicIndex];
+            // Cambiar la dirección de la nueva canción
+            music.src = cancionActual.dir;
 
-                // Capturar Cancion siguiente
-                let song_index = document.querySelector('#song');
-                song_index.innerHTML = `
+            // Acceder a todos los atributos de la nueva canción
+            nombre = cancionActual.nombre;
+            artista = cancionActual.artista;
+            url = cancionActual.url;
+
+            // Capturar Cancion siguiente
+            let song_index = document.querySelector('#song');
+            song_index.innerHTML = `
                 <div class="song"><p><strong>${nombre}</strong></p></div>
                 <div class="artist"><small>${artista}</small></div>
                 `;
-                // Capturar Fotografia del Album Siguiente
-                let album_index = document.querySelector('#album');
-                album_index.innerHTML = `
+            // Capturar Fotografia del Album Siguiente
+            let album_index = document.querySelector('#album');
+            album_index.innerHTML = `
                 <img class="img60" src="${url}">
                 `;
-                
-                // Reproducir la nueva pista
-                music.play();
-                play.classList.add("hidden");
-                pause.classList.remove("hidden");
-                sound_waves.classList.r("hidden");
-                status_p = true;
-            });
-            // Evento de clic para cambiar y reproducir la anterior pista desde el botón "next"
-            back_m.addEventListener('click', function () {
-                // Incrementar el índice para la siguiente canción
-                musicIndex = (musicIndex - 1) % musicList.length;
-                // Obtener la nueva canción
-                cancionActual = musicList[musicIndex];
-                // Cambiar la dirección de la nueva canción
-                music.src = cancionActual.dir;
 
-                // Acceder a todos los atributos de la nueva canción
-                nombre = cancionActual.nombre;
-                artista = cancionActual.artista;
-                url = cancionActual.url;
+            // Reproducir la nueva pista
+            music.play();
+            play.classList.add("hidden");
+            pause.classList.remove("hidden");
+            sound_waves.classList.r("hidden");
+            status_p = true;
+        });
+        // Evento de clic para cambiar y reproducir la anterior pista desde el botón "next"
+        back_m.addEventListener('click', function () {
+            // Incrementar el índice para la siguiente canción
+            musicIndex = (musicIndex - 1) % musicList.length;
+            // Obtener la nueva canción
+            cancionActual = musicList[musicIndex];
+            // Cambiar la dirección de la nueva canción
+            music.src = cancionActual.dir;
 
-                // Capturar Cancion siguiente
-                let song_index = document.querySelector('#song');
-                song_index.innerHTML = `
+            // Acceder a todos los atributos de la nueva canción
+            nombre = cancionActual.nombre;
+            artista = cancionActual.artista;
+            url = cancionActual.url;
+
+            // Capturar Cancion siguiente
+            let song_index = document.querySelector('#song');
+            song_index.innerHTML = `
                 <div class="song"><p><strong>${nombre}</strong></p></div>
                 <small>${artista}</small>
                 `;
-                // Capturar Fotografia del Album Siguiente
-                let album_index = document.querySelector('#album');
-                album_index.innerHTML = `
+            // Capturar Fotografia del Album Siguiente
+            let album_index = document.querySelector('#album');
+            album_index.innerHTML = `
                 <img class="img60" src="${url}">
                 `;
 
-                // Reproducir la nueva pista
-                music.play();
-                play.classList.add("hidden");
-                pause.classList.remove("hidden");
-                sound_waves.classList.remove("hidden");
-                status_p = true;
-            });
+            // Reproducir la nueva pista
+            music.play();
+            play.classList.add("hidden");
+            pause.classList.remove("hidden");
+            sound_waves.classList.remove("hidden");
+            status_p = true;
+        });
     }
-    else{
+    else {
         music.pause();
         play.classList.remove("hidden");
         pause.classList.add("hidden");
         sound_waves.classList.add("hidden");
         status_p = false;
     }
- });
+});
 // Capturar Texto de Cancion Actual
 let song_index = document.querySelector('#song');
 song_index.innerHTML = `
@@ -155,9 +171,8 @@ volumeControl.addEventListener('input', function () {
 });
 // Controlar el evento de finalización para cambiar y reproducir la siguiente pista
 music.addEventListener('ended', function () {
-    //musicIndex = (musicIndex + 1) % musicList.length;
-    // Generar un índice aleatorio diferente al actual
-    musicIndex = getRandomIndex(musicIndex, musicList.length);
+    // Obtener un índice aleatorio sin repetir
+    musicIndex = getNextRandomIndex();
     // Obtener la nueva canción
     cancionActual = musicList[musicIndex];
     music.src = cancionActual.dir;

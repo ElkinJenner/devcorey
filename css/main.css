@@ -90,14 +90,10 @@ a{
   min-height: 100vh;
 }
 .cover .avatar {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   margin: 0 auto;
-  right: 0;
-  left: 0;
-  max-width: 40%;
   height: auto;
-  object-fit: contain;
+  display: block;
 }
 .cover .scroll{
     position: fixed;
@@ -107,6 +103,7 @@ a{
 .scroll_c{
   display: grid;
 }
+.slogan{position: absolute;}
 .slogan>h1 {
   text-wrap: nowrap;
   animation-name: moveSlogan;
@@ -116,16 +113,8 @@ a{
   padding-right: 2rem;
   font-weight: normal;
 }
-.slogan h1:last-child {
-  padding-left: 2rem;
-}
-
+.slogan h1:last-child {padding-left: 2rem;}
 @keyframes moveSlogan {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-100%);}
 }

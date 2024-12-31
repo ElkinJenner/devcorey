@@ -32,6 +32,7 @@
      .column_w16 {
          width: 50%!important;
      }
+    .slogan{position: inherit!important;}
     .cover .avatar{max-width: 60%!important;}
        .switch_contender{
         width: 1.875rem;
@@ -92,7 +93,7 @@
     .switch_r {margin-left: 1rem;}
     .navbar_right ul {gap: 1.5rem;}
     span{font-size: 20px!important;}
-    .cover .avatar{max-width: 80%!important;}
+    .cover .avatar{max-width: 95%!important;}
     .player_music_contender{margin-right: .5rem!important;}
     .player_music{display: inherit!important;}
     .player_music .img60{width: 80px;}
@@ -120,11 +121,9 @@
  }
   @media (max-width: 600px) {
     span{font-size: 16px!important; line-height: 19px!important;}
-    .cover .avatar{max-width: 100%!important;}
   }
   @media (max-width: 400px) {
     .cover, .main {min-height: inherit!important;}
-    .cover .avatar{top: 12rem; position: inherit!important;}
     .player_music_contender{display: none;}
 
     .f_250 {font-size: calc(9px* 6); line-height: calc(9px* 6);}

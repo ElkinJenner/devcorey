@@ -2,7 +2,7 @@
     position:fixed;
     bottom: .8rem;
     right: 0;
-    margin-right: 1.4rem;
+    margin-right: 1.2rem;
     z-index: 100;
 }
 .player_music{
@@ -152,31 +152,16 @@ Animation waves
 }
 
 @keyframes waveAnimation {
-    0% {
-        transform: scaleY(1);
-    }
-
-    100% {
-        transform: scaleY(1.5);
-    }
+    0% {transform: scaleY(1);}
+    100% {transform: scaleY(1.5);}
 }
 
 @keyframes waveAnimation2 {
-    0% {
-        transform: scaleY(3);
-    }
-
-    100% {
-        transform: scaleY(.5);
-    }
+    0% {transform: scaleY(3);}
+    100% {transform: scaleY(.5);}
 }
 
 @keyframes waveAnimation3 {
-    0% {
-        transform: scaleY(1);
-    }
-
-    100% {
-        transform: scaleY(.1);
-    }
+    0% {transform: scaleY(1);}
+    100% {transform: scaleY(.1);}
 }
