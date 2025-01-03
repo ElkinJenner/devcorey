@@ -41,7 +41,7 @@ h4 {
 .fs2 {font-size: .875rem;}
 body {
   font: 22px 'BaseNeue CondensedMedium', sans-serif;
-  background: var(--color_light);
+  background-color: var(--color_light);
   color: var(--color_dark);
   letter-spacing: 1px;
   scroll-behavior: smooth;

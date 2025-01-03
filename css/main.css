@@ -118,3 +118,9 @@ a{
   0% {transform: translateX(0%);}
   100% {transform: translateX(-100%);}
 }
+#avatar-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
