@@ -8,8 +8,8 @@ scene.background = null; // Fondo transparente
 
 
 // Cámara
-const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 1, 100);
-camera.position.set(0, 2, 5);
+const camera = new THREE.PerspectiveCamera(95, container.clientWidth / container.clientHeight, 1, 100);
+camera.position.set(0, 5, 5);
 
 // Renderizador
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // Alpha para transparencia
@@ -34,7 +34,7 @@ const adjustModelScale = () => {
         const containerHeight = container.clientHeight;
 
         // Escalar el modelo proporcionalmente al tamaño del contenedor
-        const scaleFactor = Math.min(containerWidth, containerHeight) / 130; // Ajusta 130 según la escala deseada
+        const scaleFactor = Math.min(containerWidth, containerHeight) / 200; // Ajusta 130 según la escala deseada
         model.scale.set(scaleFactor, scaleFactor, scaleFactor);
     }
 };
@@ -49,13 +49,13 @@ loader.load("models/model_robot.glb", function (gltf) {
     adjustModelScale();
 
     // Configurar rotación inicial para que mire hacia la cámara
-    model.rotation.set(0, Math.PI /-2 , 0); // Rotación en el eje Y para que esté de frente
+    model.rotation.set(0, Math.PI /-1 , 0); // Rotación en el eje Y para que esté de frente
 
     // Variables para la animación
-    let rotationDirection = 3; // 1 para girar a la derecha, -1 para girar a la izquierda
-    let rotationProgress = 1; // Seguimiento del progreso de la rotación
+    let rotationDirection = 2; // 1 para girar a la derecha, -1 para girar a la izquierda
+    let rotationProgress = 0; // Seguimiento del progreso de la rotación
     const rotationSpeed = 0.005; // Velocidad de rotación
-    const maxRotation = (Math.PI / 2, 1); // Máxima rotación: 10% (en radianes)
+    const maxRotation = (Math.PI / 1, 1); // Máxima rotación: 10% (en radianes)
 
     // Animación
     const animate = () => {
@@ -71,7 +71,7 @@ loader.load("models/model_robot.glb", function (gltf) {
             }
 
             // Aplicar la rotación
-            model.rotation.y = (Math.PI /-2, -2) + rotationProgress; // Siempre iniciar desde el frente
+            model.rotation.y = (Math.PI /-2, -1) + rotationProgress; // Siempre iniciar desde el frente
         }
 
         renderer.render(scene, camera);
