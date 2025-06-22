@@ -10,6 +10,9 @@ class Cancion {
 }
 // Lista de canciones
 let musicList = [
+    new Cancion("Rest My Chemistry", "music/RestMyChemistry.mp3", "INTERPOL", "music/RestMyChemistry.jpg"),
+    new Cancion("Gouge Away", "music/GougeAway.mp3", "PIXIES", "music/GougeAway.jpg"),
+    new Cancion("Psycho", "music/Psycho.mp3", "MUSE", "music/Psycho.jpg"),
     new Cancion("Trouble", "music/Trouble.mp3", "CAGE THE ELEPHANT", "music/Trouble.jpg"),
     new Cancion("The Suburbs", "music/TheSuburbs.mp3", "ARCADE FIRE", "music/TheSuburbs.jpg"),
     new Cancion("Black Honey", "music/BlackHoney.mp3", "THRICE", "music/BlackHoney.jpg"),
