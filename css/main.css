@@ -76,7 +76,9 @@ a{
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hidden {display: none;}
 .overflow_h{overflow: hidden;}
@@ -86,6 +88,7 @@ a{
 .posit_s{position: sticky;}
 .d_f{display: flex;}
 .d_g{display: grid;}
+.t_c{text-align: center;}
 .cover, .main{
   min-height: 100vh;
 }
@@ -123,4 +126,10 @@ a{
   top: 0;
   display: flex;
   justify-content: center;
+}
+.gap_1{
+  gap: 1rem;
+}
+.b_r1{
+  border-radius: 1rem;
 }
